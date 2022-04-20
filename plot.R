@@ -50,13 +50,19 @@ error.df = data.frame(odom.x = error.odom.x,
                       odomf.z = error.odomf.z)
 
 b = ggplot() +
-  geom_line(data = error.df,aes(x=(1:1671),y=odom.x)) +
-  geom_line(data = error.df,aes(x=(1:1671),y=odom.y)) +
-  geom_line(data = error.df,aes(x=(1:1671),y=odom.z)) 
+  geom_line(data = error.df,aes(x=(1:1671),y=odom.x, color = "Odometria"), size = 1.5) +
+  geom_line(data = error.df,aes(x=(1:1671),y=odomf.x, color = "Odometria Filtrada"), size = 1.5) +
+  labs(title = "Erro das Odometrias (X)") + labs(color="Legenda") + xlab("Tempo") + ylab("X (m)")
 b
 
 c = ggplot() +
-  geom_line(data = error.df,aes(x=(1:1671),y=odomf.x)) +
-  geom_line(data = error.df,aes(x=(1:1671),y=odomf.y)) +
-  geom_line(data = error.df,aes(x=(1:1671),y=odomf.z)) 
+  geom_line(data = error.df,aes(x=(1:1671),y=odom.y, color = "Odometria"), size = 1.5) +
+  geom_line(data = error.df,aes(x=(1:1671),y=odomf.y, color = "Odometria Filtrada"), size = 1.5) +
+  labs(title = "Erro das Odometrias (Y)") + labs(color="Legenda") + xlab("Tempo") + ylab("Y (m)")
 c
+
+d = ggplot() +
+  geom_line(data = error.df,aes(x=(1:1671),y=odom.z, color = "Odometria"), size = 1.5) +
+  geom_line(data = error.df,aes(x=(1:1671),y=odomf.z, color = "Odometria Filtrada"), size = 1.5) +
+  labs(title = "Erro das Odometrias (Z)") + labs(color="Legenda") + xlab("Tempo") + ylab("Z (m)")
+d
