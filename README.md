@@ -1,4 +1,5 @@
 # Atividade Husky
+Instituição: Universidade Federal da Bahia
 Membros: Mateus Seixas, Matheus Soares e Estevão Maciel.
 ## Para adcionar o ground truth
 Adcionar o seguinte trecho de código no arquivo husky.urdf.xacro
@@ -17,4 +18,4 @@ Adcionar o seguinte trecho de código no arquivo husky.urdf.xacro
   </gazebo>
   ```
   
-  ## Bag, CSV's, scrip para plot e plots disponíveis na pasta dados
+  ### Bag, CSV's, scrip para plot e plots disponíveis na pasta dados
