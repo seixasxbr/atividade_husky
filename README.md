@@ -1,5 +1,5 @@
 # Atividade Husky
-Instituição: Universidade Federal da Bahia
+Instituição: Universidade Federal da Bahia<br>
 Membros: Mateus Seixas, Matheus Soares e Estevão Maciel.
 ## Para adcionar o ground truth
 Adcionar o seguinte trecho de código no arquivo husky.urdf.xacro
